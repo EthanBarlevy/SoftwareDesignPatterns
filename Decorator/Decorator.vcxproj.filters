@@ -13,10 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{7e352e7a-721a-4cf4-8982-b91ae3850828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConcreteComponent">
+      <UniqueIdentifier>{82581c6f-6e78-48aa-b199-b0f5f0888337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConcreteDecorator">
+      <UniqueIdentifier>{3bada655-8457-4998-ad0f-d1fc28758c9d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Interfaces\WeaponComponent.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces\Mod.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteComponnets\Rifle.cpp">
+      <Filter>ConcreteComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces\Color.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorator\Barrel.cpp">
+      <Filter>ConcreteDecorator</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorator\Blue.cpp">
+      <Filter>ConcreteDecorator</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorator\Scope.cpp">
+      <Filter>ConcreteDecorator</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteComponnets\Pistol.cpp">
+      <Filter>ConcreteComponent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interfaces\WeaponComponent.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Mod.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Color.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteComponnets\Rifle.h">
+      <Filter>ConcreteComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorator\Scope.h">
+      <Filter>ConcreteDecorator</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorator\Barrel.h">
+      <Filter>ConcreteDecorator</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorator\Blue.h">
+      <Filter>ConcreteDecorator</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteComponnets\Pistol.h">
+      <Filter>ConcreteComponent</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

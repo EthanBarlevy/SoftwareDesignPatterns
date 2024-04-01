@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{3e57c7cd-74b5-4daa-95a9-a9ac828f84e7}</ProjectGuid>
-    <RootNamespace>Decorator</RootNamespace>
+    <ProjectGuid>{c2801db0-3aed-401f-bc4e-b2840e96d8f1}</ProjectGuid>
+    <RootNamespace>MexicanRestaurant</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,25 +127,36 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ConcreteComponnets\Pistol.cpp" />
-    <ClCompile Include="ConcreteComponnets\Rifle.cpp" />
-    <ClCompile Include="ConcreteDecorator\Barrel.cpp" />
-    <ClCompile Include="ConcreteDecorator\Blue.cpp" />
-    <ClCompile Include="ConcreteDecorator\Scope.cpp" />
-    <ClCompile Include="Interfaces\Color.cpp" />
-    <ClCompile Include="Interfaces\Mod.cpp" />
-    <ClCompile Include="Interfaces\WeaponComponent.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ConcreteComponents\Burrito.cpp" />
+    <ClCompile Include="ConcreteComponents\Taco.cpp" />
+    <ClCompile Include="ConcreteComponents\Tostada.cpp" />
+    <ClCompile Include="ConcreteDecorators\Beans.cpp" />
+    <ClCompile Include="ConcreteDecorators\Beef.cpp" />
+    <ClCompile Include="ConcreteDecorators\Cheese.cpp" />
+    <ClCompile Include="ConcreteDecorators\Chicken.cpp" />
+    <ClCompile Include="ConcreteDecorators\Guacamole.cpp" />
+    <ClCompile Include="ConcreteDecorators\Jackfruit.cpp" />
+    <ClCompile Include="ConcreteDecorators\Rice.cpp" />
+    <ClCompile Include="Interfaces\Addon.cpp" />
+    <ClCompile Include="Interfaces\Meat.cpp" />
+    <ClCompile Include="MexicanRestaurant.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ConcreteComponnets\Pistol.h" />
-    <ClInclude Include="ConcreteComponnets\Rifle.h" />
-    <ClInclude Include="ConcreteDecorator\Barrel.h" />
-    <ClInclude Include="ConcreteDecorator\Blue.h" />
-    <ClInclude Include="ConcreteDecorator\Scope.h" />
-    <ClInclude Include="Interfaces\Color.h" />
-    <ClInclude Include="Interfaces\Mod.h" />
-    <ClInclude Include="Interfaces\WeaponComponent.h" />
+    <ClInclude Include="ConcreteComponents\Burrito.h" />
+    <ClInclude Include="ConcreteComponents\Taco.h" />
+    <ClInclude Include="ConcreteComponents\Tostada.h" />
+    <ClInclude Include="ConcreteDecorators\Beans.h" />
+    <ClInclude Include="ConcreteDecorators\Beef.h" />
+    <ClInclude Include="ConcreteDecorators\Cheese.h" />
+    <ClInclude Include="ConcreteDecorators\Chicken.h" />
+    <ClInclude Include="ConcreteDecorators\Guacamole.h" />
+    <ClInclude Include="ConcreteDecorators\Jackfruit.h" />
+    <ClInclude Include="ConcreteDecorators\Rice.h" />
+    <ClInclude Include="Includes.h" />
+    <ClInclude Include="Interfaces\Addon.h" />
+    <ClInclude Include="Interfaces\DishComponent.h" />
+    <ClInclude Include="Interfaces\Meat.h" />
+    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

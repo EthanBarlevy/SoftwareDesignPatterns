@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ConcreteDecorators">
+      <UniqueIdentifier>{b12c21ab-82d0-4424-ac83-661a876053b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Interfaces">
+      <UniqueIdentifier>{a7f86458-382c-4cbe-8e42-cfb80bce22a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConcreteComponents">
+      <UniqueIdentifier>{b22056c7-37ad-4dfb-a203-2a32a9ef44e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConcreteDecorators\Addons">
+      <UniqueIdentifier>{03c62f7b-09da-481e-a3c9-00c047238710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConcreteDecorators\Meats">
+      <UniqueIdentifier>{1d5bc4ff-df54-48e3-b77a-fc5c1cb50e78}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MexicanRestaurant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces\Addon.cpp">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Interfaces\Meat.cpp">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Beans.cpp">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Cheese.cpp">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Guacamole.cpp">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Rice.cpp">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Beef.cpp">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Jackfruit.cpp">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteDecorators\Chicken.cpp">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteComponents\Burrito.cpp">
+      <Filter>ConcreteComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteComponents\Taco.cpp">
+      <Filter>ConcreteComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteComponents\Tostada.cpp">
+      <Filter>ConcreteComponents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interfaces\DishComponent.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Addon.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\Meat.h">
+      <Filter>Header Files\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="vector2.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Beans.h">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Cheese.h">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Guacamole.h">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Rice.h">
+      <Filter>ConcreteDecorators\Addons</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Beef.h">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Chicken.h">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteDecorators\Jackfruit.h">
+      <Filter>ConcreteDecorators\Meats</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteComponents\Burrito.h">
+      <Filter>ConcreteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteComponents\Taco.h">
+      <Filter>ConcreteComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteComponents\Tostada.h">
+      <Filter>ConcreteComponents</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
