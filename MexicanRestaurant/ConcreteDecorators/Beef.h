@@ -4,7 +4,7 @@
 class Beef : public Meat
 {
 private:
-	std::string description = "rich and meaty";
+	std::string description = ", using rich and meaty beef";
 public:
 	Beef(DishComponent* baseDish) : Meat(baseDish) {};
 	MR::Vector2* JudgeDish() override;

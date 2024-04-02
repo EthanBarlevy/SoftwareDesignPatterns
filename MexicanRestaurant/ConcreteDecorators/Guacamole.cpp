@@ -2,10 +2,10 @@
 
 MR::Vector2* Guacamole::JudgeDish()
 {
-    return &(*Addon::JudgeDish() + MR::Vector2(7.0f, 1.5f));
+    return new MR::Vector2(*Addon::JudgeDish() + MR::Vector2(7.0f, 1.5f));
 }
 
 std::string Guacamole::GetDescription()
 {
-    return DishComponent::GetDescription() + description;
+    return Addon::GetDescription() + description;
 }

@@ -21,7 +21,20 @@ int main()
     //dish = new Cheese(dish);
     dish = new Guacamole(dish);
 
+    MR::Vector2* Dish = dish->JudgeDish();
 
     std::cout << dish->GetDescription() << std::endl;
-    std::cout << dish->JudgeDish() << std::endl;
+    std::cout << "Flavor score: " << Dish->x << "    Price: " << Dish->y << "$" << std::endl;
+    if (Dish->x <= 10)
+    {
+        std::cout << "It tastes fine" << std::endl;
+    }
+    else if (Dish->x <= 20)
+    {
+        std::cout << "Pretty good" << std::endl;
+    }
+    else
+    {
+        std::cout << "Amazing dish" << std::endl;
+    }
 }

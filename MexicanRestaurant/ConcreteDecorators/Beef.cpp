@@ -2,10 +2,10 @@
 
 MR::Vector2* Beef::JudgeDish()
 {
-    return &(*Meat::JudgeDish() + MR::Vector2(15.0f, 1.0f));
+    return new MR::Vector2(*Meat::JudgeDish() + MR::Vector2(15.0f, 1.0f));
 }
 
 std::string Beef::GetDescription()
 {
-    return DishComponent::GetDescription() + description;
+    return Meat::GetDescription() + description;
 }

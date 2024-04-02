@@ -9,3 +9,8 @@ MR::Vector2* Meat::JudgeDish()
 {
     return baseDish->JudgeDish();
 }
+
+std::string Meat::GetDescription()
+{
+    return baseDish->GetDescription();
+}

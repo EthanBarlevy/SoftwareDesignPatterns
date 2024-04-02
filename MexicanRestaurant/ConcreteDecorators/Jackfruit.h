@@ -4,7 +4,7 @@
 class Jackfruit : public Meat
 {
 private:
-	std::string description = "a great vegan alternative";
+	std::string description = ", using a great vegan alternative meat, jackfruit";
 public:
 	Jackfruit(DishComponent* baseDish) : Meat(baseDish) {};
 	MR::Vector2* JudgeDish() override;

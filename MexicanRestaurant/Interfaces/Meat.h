@@ -9,4 +9,5 @@ private:
 public:
 	Meat(DishComponent* indishComponent);
 	MR::Vector2* JudgeDish() override;
+	std::string GetDescription() override;
 };

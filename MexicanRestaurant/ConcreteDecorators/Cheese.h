@@ -4,7 +4,7 @@
 class Cheese : public Addon
 {
 private:
-	std::string description = "has a wonderful flavor";
+	std::string description = ", with cheese, that has a wonderful flavor";
 public:
 	Cheese(DishComponent* baseDish) : Addon(baseDish) {};
 	MR::Vector2* JudgeDish() override;
