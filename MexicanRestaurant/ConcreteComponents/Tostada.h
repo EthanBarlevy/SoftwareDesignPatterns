@@ -11,4 +11,5 @@ private:
 public:
 	Tostada(float Flavor, float Price);
 	MR::Vector2* JudgeDish();
+	std::string GetDescription() override;
 };
