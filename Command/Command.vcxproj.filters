@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{7ad87880-cbd2-4066-9c72-34687aa73fa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{85e92c9a-d1b0-4b9c-876f-1600e75bb697}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{b680f052-f100-48eb-98ae-06b7680261ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Invoker">
+      <UniqueIdentifier>{55b984b7-627e-4a45-a048-6ecfc77d660f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recievers">
+      <UniqueIdentifier>{e9d9b6da-3e43-4814-be4b-0a19a12ef162}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Recievers\Radio.cpp">
+      <Filter>Recievers</Filter>
+    </ClCompile>
+    <ClCompile Include="Recievers\Television.cpp">
+      <Filter>Recievers</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TurnDeviceDown.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TurnDeviceUp.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TurnDeviceOn.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TurnDeviceOff.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Invokers\DeviceButton.cpp">
+      <Filter>Invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\TVRemote.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Client\RadioRemote.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\TurnItAllOff.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interfaces\IElectronicDevice.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ICommand.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\RadioRemote.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Recievers\Radio.h">
+      <Filter>Recievers</Filter>
+    </ClInclude>
+    <ClInclude Include="Recievers\Television.h">
+      <Filter>Recievers</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\TVRemote.h">
+      <Filter>Client</Filter>
+    </ClInclude>
+    <ClInclude Include="Invokers\DeviceButton.h">
+      <Filter>Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TurnDeviceDown.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TurnDeviceUp.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TurnDeviceOn.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TurnDeviceOff.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\TurnItAllOff.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
