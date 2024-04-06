@@ -1,20 +1,64 @@
-// Turtle.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include "engine.h"
 #include <iostream>
+#include <algorithm>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+	// the actual code
+	vl::InitializeMemory();
+	vl::SetFilePath("../Assets");
+
+	// initialize engine
+	vl::g_renderer.Initialize();
+	vl::g_inputSystem.Initialize();
+	vl::g_audioSystem.Initialize();
+	vl::g_resourceManager.Initialize();
+	vl::g_physicsSystem.Initialize();
+	vl::g_eventManager.Initialize();
+
+	vl::Engine::Instance().Register();
+
+	// create window
+	vl::g_renderer.CreateWindow("Gaming", 500, 500);
+	vl::g_renderer.setClearColor(vl::Color{ 0, 0, 0, 255 });
+
+	//std::unique_ptr<myGame> game = std::make_unique<myGame>();
+	//game->Initialize();
+
+	{
+		bool quit = false;
+		while (!quit)
+		{
+			// update
+			vl::g_time.Tick();
+			vl::g_inputSystem.Update();
+			vl::g_audioSystem.Update();
+			vl::g_physicsSystem.Update();
+			vl::g_eventManager.Update();
+
+			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
+
+			//game->Update();
+
+			//render
+			vl::g_renderer.BeginFrame();
+
+			//game->Draw(vl::g_renderer);
+
+			vl::g_renderer.EndFrame();
+		}
+	}
+	//game->Shutdown();
+	//game.reset(); // essentially the same as calling delete on a normal pointer
+
+	vl::Factory::Instance().Shutdown();
+	// technically these should also be singletons but i am to lazy to fix it
+	vl::g_inputSystem.Shutdown();
+	vl::g_renderer.Shutodwn();
+	vl::g_audioSystem.Shutdown();
+	vl::g_resourceManager.Shutodwn();
+	vl::g_physicsSystem.Shutdown();
+	vl::g_eventManager.Shutdown();
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
