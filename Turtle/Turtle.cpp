@@ -22,7 +22,7 @@ int main()
 
 	// create window
 	vl::g_renderer.CreateWindow("Gaming", 500, 500);
-	vl::g_renderer.setClearColor(vl::Color{ 0, 0, 0, 255 });
+	vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
 
 	//std::unique_ptr<myGame> game = std::make_unique<myGame>();
 	//game->Initialize();
