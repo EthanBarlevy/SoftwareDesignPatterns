@@ -1,5 +1,6 @@
 #include "engine.h"
 #include "Program.h"
+#include "Client/CommandPanel.h"
 #include <iostream>
 #include <algorithm>
 
@@ -27,6 +28,8 @@ int main()
 
 	std::unique_ptr<Program> program = std::make_unique<Program>();
 	program->Initialize();
+
+	ITurtle* turtle = CommandPanel::GetTurtle(program->GetScene());
 
 	{
 		bool quit = false;

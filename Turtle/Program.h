@@ -8,4 +8,5 @@ public:
 	virtual void Shutdown() override;
 	virtual void Update() override;
 	virtual void Draw(vl::Renderer& renderer) override;
+	vl::Scene* GetScene();
 };
