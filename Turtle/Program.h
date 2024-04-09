@@ -3,6 +3,8 @@
 
 class Program : public vl::Game
 {
+private:
+	bool initalized = false;
 public:
 	virtual void Initialize() override;
 	virtual void Shutdown() override;

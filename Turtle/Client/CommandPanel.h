@@ -5,5 +5,5 @@
 class CommandPanel
 {
 public:
-	static ITurtle* GetTurtle(vl::Scene* scene);
+	static ITurtle* GetTurtle();
 };

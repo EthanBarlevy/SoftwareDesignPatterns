@@ -1,6 +1,6 @@
 #include "Turtle.h"
 
-Turtle::Turtle(vl::Scene* scene)
+void Turtle::SetActor(vl::Scene* scene)
 {
 	actor = scene->GetActorFromName<vl::Actor>("Turtle");
 }
@@ -28,4 +28,9 @@ void Turtle::MoveRight()
 void Turtle::ChangeColor(vl::Color newColor)
 {
 	actor->GetComponent<vl::SquareComponent>()->ChangeColor(newColor);
+}
+
+vl::Color Turtle::GetColor()
+{
+	return actor->GetComponent<vl::SquareComponent>()->color;
 }

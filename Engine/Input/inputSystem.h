@@ -54,6 +54,11 @@ namespace vl
 	extern const uint32_t key_down;
 	extern const uint32_t key_left;
 	extern const uint32_t key_right;
+	extern const uint32_t key_w;
+	extern const uint32_t key_a;
+	extern const uint32_t key_s;
+	extern const uint32_t key_d;
+	extern const uint32_t key_f;
 	extern const uint32_t key_escape;
 
 	extern const uint32_t button_left;

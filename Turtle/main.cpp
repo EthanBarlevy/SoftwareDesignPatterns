@@ -1,6 +1,13 @@
 #include "engine.h"
 #include "Program.h"
 #include "Client/CommandPanel.h"
+#include "Recievers/Turtle.h"
+#include "Commands/ChangeTurtleColor.h"
+#include "Commands/MoveTurtleUp.h"
+#include "Commands/MoveTurtleDown.h"
+#include "Commands/MoveTurtleLeft.h"
+#include "Commands/MoveTurtleRight.h"
+#include "Invoker/Button.h"
 #include <iostream>
 #include <algorithm>
 
@@ -29,10 +36,23 @@ int main()
 	std::unique_ptr<Program> program = std::make_unique<Program>();
 	program->Initialize();
 
-	ITurtle* turtle = CommandPanel::GetTurtle(program->GetScene());
+	ITurtle* turtleControls = CommandPanel::GetTurtle();
+	dynamic_cast<Turtle*>(turtleControls)->SetActor(program->GetScene());
+
+	MoveTurtleUp* moveUp = new MoveTurtleUp(turtleControls);
+	MoveTurtleDown* moveDown = new MoveTurtleDown(turtleControls);
+	MoveTurtleLeft* moveLeft = new MoveTurtleLeft(turtleControls);
+	MoveTurtleRight* moveRight = new MoveTurtleRight(turtleControls);
+	ChangeTurtleColor* changeToRed = new ChangeTurtleColor(turtleControls, {255, 0, 0, 255});
+	ChangeTurtleColor* changeToGreen = new ChangeTurtleColor(turtleControls, {0, 255, 0, 255});
+	ChangeTurtleColor* changeToYellow = new ChangeTurtleColor(turtleControls, {255, 255, 0, 255});
+	ChangeTurtleColor* changeToBlue = new ChangeTurtleColor(turtleControls, {0, 0, 255, 255});
+
+	Button* button = new Button();
 
 	{
 		bool quit = false;
+		bool action = true;
 		while (!quit)
 		{
 			// update
@@ -43,6 +63,100 @@ int main()
 			vl::g_eventManager.Update();
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
+			// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- COMMANDS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+			if (vl::g_inputSystem.GetKeyDown(vl::key_left))
+			{
+				if (action)
+				{
+					button->AddCommand(moveLeft);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_right))
+			{
+				if (action)
+				{
+					button->AddCommand(moveRight);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_up))
+			{
+				if (action)
+				{
+					button->AddCommand(moveUp);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_down))
+			{
+				if (action)
+				{
+					button->AddCommand(moveDown);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_w))
+			{
+				if (action)
+				{
+					button->AddCommand(changeToBlue);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_a))
+			{
+				if (action)
+				{
+					button->AddCommand(changeToRed);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_d))
+			{
+				if (action)
+				{
+					button->AddCommand(changeToGreen);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_s))
+			{
+				if (action)
+				{
+					button->AddCommand(changeToYellow);
+					button->Press();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_space))
+			{
+				if (action)
+				{
+					button->UndoPress();
+					action = false;
+				}
+			}
+			if (vl::g_inputSystem.GetKeyState(vl::key_left) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_right) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_up) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_down) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_w) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_a) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_s) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_d) == vl::g_inputSystem.Idle
+				&& vl::g_inputSystem.GetKeyState(vl::key_space) == vl::g_inputSystem.Idle)
+			{
+				action = true;
+			}
+
 
 			program->Update();
 

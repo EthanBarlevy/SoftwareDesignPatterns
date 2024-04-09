@@ -6,9 +6,9 @@
 class TurnItAllOff : public ICommand
 {
 private:
-	std::vector<IElectronicDevice>* devices;
+	std::vector<IElectronicDevice*>* devices;
 public:
-	TurnItAllOff(std::vector<IElectronicDevice>* newDevices);
+	TurnItAllOff(std::vector<IElectronicDevice*>* newDevices);
 	void Execute() override;
 	void Undo() override;
 };

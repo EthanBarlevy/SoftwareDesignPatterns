@@ -6,10 +6,11 @@ class Turtle : public ITurtle
 private:
 	vl::Actor* actor;
 public:
-	Turtle(vl::Scene* scene);
+	void SetActor(vl::Scene* scene);
 	void MoveUp();
 	void MoveDown();
 	void MoveLeft();
 	void MoveRight();
 	void ChangeColor(vl::Color newColor);
+	vl::Color GetColor();
 };

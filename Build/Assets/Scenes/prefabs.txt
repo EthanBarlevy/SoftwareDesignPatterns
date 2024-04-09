@@ -7,13 +7,13 @@
 			"prefab":true,
 			"transform":{
 				"position":[
-					100,
-					220
+					220,
+					100
 				],
 				"scale":[
 					1,
 					1
-				]
+				],
 				"rotation":0
 			},
 			"components":[

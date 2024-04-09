@@ -45,6 +45,27 @@
     <ClCompile Include="Recievers\Turtle.cpp">
       <Filter>Recievers</Filter>
     </ClCompile>
+    <ClCompile Include="Client\CommandPanel.cpp">
+      <Filter>Client</Filter>
+    </ClCompile>
+    <ClCompile Include="Invoker\Button.cpp">
+      <Filter>Invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleUp.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleDown.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleLeft.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleRight.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\ChangeTurtleColor.cpp">
+      <Filter>Commands</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Program.h">

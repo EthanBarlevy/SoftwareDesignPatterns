@@ -1,8 +1,6 @@
 #include "CommandPanel.h"
 
-ITurtle* CommandPanel::GetTurtle(vl::Scene* scene)
+ITurtle* CommandPanel::GetTurtle()
 {
-    // idk why this new is a preprocessor new 
-    // hopefully that doesnt break everything
-    return new Turtle(scene);
+    return new Turtle();
 }

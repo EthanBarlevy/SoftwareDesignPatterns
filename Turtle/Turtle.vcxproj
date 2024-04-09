@@ -135,8 +135,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Client\CommandPanel.cpp" />
+    <ClCompile Include="Commands\ChangeTurtleColor.cpp" />
+    <ClCompile Include="Commands\MoveTurtleDown.cpp" />
     <ClCompile Include="Commands\MoveTurtleDown.h" />
+    <ClCompile Include="Commands\MoveTurtleLeft.cpp" />
+    <ClCompile Include="Commands\MoveTurtleRight.cpp" />
+    <ClCompile Include="Commands\MoveTurtleUp.cpp" />
     <ClCompile Include="Commands\MoveTurtleUp.h" />
+    <ClCompile Include="Invoker\Button.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Recievers\Turtle.cpp" />

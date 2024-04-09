@@ -15,6 +15,15 @@ void Program::Initialize()
 		m_scene->Read(document);
 	}
 	m_scene->Initialize();
+	// i really hope this doesnt break
+	if (!initalized)
+	{
+		auto player = vl::Factory::Instance().Create<vl::Actor>("Turtle");
+		player->Initialize();
+
+		m_scene->Add(std::move(player));
+		initalized = true;
+	}
 }
 
 void Program::Shutdown()
