@@ -5,6 +5,7 @@ void Button::AddCommand(ICommand* newCommand)
 {
 	commands.push(newCommand);
 	command = commands.top();
+	std::cout << "Added. commands left: " << commands.size() << std::endl;
 }
 
 void Button::Press()
@@ -22,5 +23,6 @@ void Button::UndoPress()
 		{
 			command = commands.top();
 		}
+		std::cout << "Removed. commands left: " << commands.size() << std::endl;
 	}
 }

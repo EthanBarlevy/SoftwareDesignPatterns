@@ -36,6 +36,7 @@ int main()
 	std::unique_ptr<Program> program = std::make_unique<Program>();
 	program->Initialize();
 
+	// -=-=-=-=-=-=-=-=-=-=- Start of command pattern things -=-=-=-=-=-=-=-=-=-=-=-=-=-
 	ITurtle* turtleControls = CommandPanel::GetTurtle();
 	dynamic_cast<Turtle*>(turtleControls)->SetActor(program->GetScene());
 
@@ -63,8 +64,9 @@ int main()
 			vl::g_eventManager.Update();
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
+
 			// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- COMMANDS -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-			if (vl::g_inputSystem.GetKeyDown(vl::key_left))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_left)) // move left
 			{
 				if (action)
 				{
@@ -73,7 +75,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_right))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_right)) // move right
 			{
 				if (action)
 				{
@@ -82,7 +84,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_up))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_up)) // move up
 			{
 				if (action)
 				{
@@ -91,7 +93,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_down))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_down)) // move down
 			{
 				if (action)
 				{
@@ -100,7 +102,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_w))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_w)) // change color (blue)
 			{
 				if (action)
 				{
@@ -109,7 +111,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_a))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_a)) // change color (red)
 			{
 				if (action)
 				{
@@ -118,7 +120,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_d))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_d)) // change color (green)
 			{
 				if (action)
 				{
@@ -127,7 +129,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_s))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_s)) // change color (yellow)
 			{
 				if (action)
 				{
@@ -136,7 +138,7 @@ int main()
 					action = false;
 				}
 			}
-			if (vl::g_inputSystem.GetKeyDown(vl::key_space))
+			if (vl::g_inputSystem.GetKeyDown(vl::key_space)) // undo
 			{
 				if (action)
 				{
@@ -170,6 +172,16 @@ int main()
 	}
 	program->Shutdown();
 	program.reset(); // essentially the same as calling delete on a normal pointer
+	delete(moveUp);
+	delete(moveDown);
+	delete(moveLeft);
+	delete(moveRight);
+	delete(changeToBlue);
+	delete(changeToRed);
+	delete(changeToGreen);
+	delete(changeToYellow);
+	delete(button);
+	delete(turtleControls);
 
 	vl::Factory::Instance().Shutdown();
 	// technically these should also be singletons but i am to lazy to fix it
