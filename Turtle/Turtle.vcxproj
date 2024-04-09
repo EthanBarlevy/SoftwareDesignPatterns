@@ -157,6 +157,9 @@
     <ClInclude Include="Program.h" />
     <ClInclude Include="Recievers\Turtle.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Build\Assets\Scenes\prefabs.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

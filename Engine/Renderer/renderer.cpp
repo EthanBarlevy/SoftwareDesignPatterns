@@ -73,7 +73,7 @@ namespace vl
 	{
 		SDL_SetRenderDrawColor(m_renderer, color.r, color.g, color.b, color.a);
 		auto rect = new SDL_Rect();
-		rect->x = v1.x; rect->y = v1.y; rect->w = v2.x - v1.x; rect->h = v2.y - v1.y;
+		rect->x = v1.x; rect->y = v1.y; rect->w = v2.x; rect->h = v2.y;
 		SDL_RenderDrawRect(m_renderer, rect);
 	}
 

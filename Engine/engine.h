@@ -35,6 +35,7 @@
 #include "Components/RenderComponents/spriteAnimComponent.h"
 #include "Components/RenderComponents/modelComponent.h"
 #include "Components/RenderComponents/textComponent.h"
+#include "Components/RenderComponents/squareComponent.h"
 #include "Components/tilemapComponent.h"
 #include "Components/audioComponent.h"
 #include "Components/physicsComponent.h"

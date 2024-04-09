@@ -1,5 +1,10 @@
 #include "Turtle.h"
 
+Turtle::Turtle()
+{
+	//
+}
+
 void Turtle::MoveUp()
 {
 	actor.GetTransform().position.y -= 20;
@@ -22,4 +27,5 @@ void Turtle::MoveRight()
 
 void Turtle::ChangeColor(vl::Color newColor)
 {
+	actor.GetComponent<vl::SquareComponent>()->ChangeColor(newColor);
 }

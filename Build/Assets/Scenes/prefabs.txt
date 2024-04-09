@@ -1,0 +1,36 @@
+{
+	"actors":[
+		{
+			"type":"Actor",
+			"name":"Turtle",
+			"tag":"Player",
+			"prefab":true,
+			"transform":{
+				"position":[
+					100,
+					220
+				],
+				"scale":[
+					1,
+					1
+				]
+				"rotation":0
+			},
+			"components":[
+				{
+					"type":"SquareComponent",
+					"color":[
+						0,
+						0,
+						255,
+						255
+					],
+					"size":[
+						60,
+						60
+					]
+				}
+			]
+		}
+	]
+}

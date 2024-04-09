@@ -17,7 +17,10 @@ namespace vl
 		virtual void Update() override;
 		virtual void Draw(Renderer& renderer) override;
 
+		void ChangeColor(Color& newColor);
+
 	public:
+		Vector2 size;
 		Color color;
 	};
 }
