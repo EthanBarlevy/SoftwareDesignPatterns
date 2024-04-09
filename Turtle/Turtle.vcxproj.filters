@@ -13,10 +13,66 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Recievers">
+      <UniqueIdentifier>{3baaebe5-0c9d-4fe5-87d0-e3770606cdb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Invoker">
+      <UniqueIdentifier>{4a3fa20d-3a6b-42cb-8daf-32c08c315c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{28387da5-d142-4108-ad20-6fa0ce94758a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Commands">
+      <UniqueIdentifier>{2ce455ae-7c96-4420-a19b-0b18e4761f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Client">
+      <UniqueIdentifier>{3837c9d6-41e5-4408-b008-a1b4fb62ac10}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Turtle.cpp">
+    <ClCompile Include="Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleUp.h">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Commands\MoveTurtleDown.h">
+      <Filter>Commands</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Recievers\Turtle.cpp">
+      <Filter>Recievers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Program.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Recievers\Turtle.h">
+      <Filter>Recievers</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ITurtle.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\ICommand.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Invoker\Button.h">
+      <Filter>Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\MoveTurtleLeft.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\MoveTurtleRight.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Commands\ChangeTurtleColor.h">
+      <Filter>Commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Client\CommandPanel.h">
+      <Filter>Client</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,4 +1,5 @@
 #include "engine.h"
+#include "Program.h"
 #include <iostream>
 #include <algorithm>
 
@@ -21,11 +22,11 @@ int main()
 	vl::Engine::Instance().Register();
 
 	// create window
-	vl::g_renderer.CreateWindow("Gaming", 500, 500);
+	vl::g_renderer.CreateWindow("Command Pattern", 500, 500);
 	vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
 
-	//std::unique_ptr<myGame> game = std::make_unique<myGame>();
-	//game->Initialize();
+	std::unique_ptr<Program> program = std::make_unique<Program>();
+	program->Initialize();
 
 	{
 		bool quit = false;
@@ -40,18 +41,18 @@ int main()
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
 
-			//game->Update();
+			program->Update();
 
 			//render
 			vl::g_renderer.BeginFrame();
 
-			//game->Draw(vl::g_renderer);
+			program->Draw(vl::g_renderer);
 
 			vl::g_renderer.EndFrame();
 		}
 	}
-	//game->Shutdown();
-	//game.reset(); // essentially the same as calling delete on a normal pointer
+	program->Shutdown();
+	program.reset(); // essentially the same as calling delete on a normal pointer
 
 	vl::Factory::Instance().Shutdown();
 	// technically these should also be singletons but i am to lazy to fix it

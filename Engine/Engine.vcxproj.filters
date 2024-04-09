@@ -171,6 +171,9 @@
     <ClCompile Include="Components\cameraComponent.cpp">
       <Filter>Source Files\Components</Filter>
     </ClCompile>
+    <ClCompile Include="Components\RenderComponents\squareComponent.cpp">
+      <Filter>Source Files\Components\RenderComponents</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\mathUtils.h">
@@ -328,6 +331,9 @@
     </ClInclude>
     <ClInclude Include="Components\cameraComponent.h">
       <Filter>Source Files\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RenderComponents\squareComponent.h">
+      <Filter>Source Files\Components\RenderComponents</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

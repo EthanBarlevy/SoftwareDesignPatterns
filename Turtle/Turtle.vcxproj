@@ -135,12 +135,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Turtle.cpp" />
+    <ClCompile Include="Commands\MoveTurtleDown.h" />
+    <ClCompile Include="Commands\MoveTurtleUp.h" />
+    <ClCompile Include="Program.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Recievers\Turtle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{a78f4ba7-e1fb-4ff3-a7fc-9b9e30b48980}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client\CommandPanel.h" />
+    <ClInclude Include="Commands\ChangeTurtleColor.h" />
+    <ClInclude Include="Commands\MoveTurtleLeft.h" />
+    <ClInclude Include="Commands\MoveTurtleRight.h" />
+    <ClInclude Include="Interfaces\ICommand.h" />
+    <ClInclude Include="Interfaces\ITurtle.h" />
+    <ClInclude Include="Invoker\Button.h" />
+    <ClInclude Include="Program.h" />
+    <ClInclude Include="Recievers\Turtle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

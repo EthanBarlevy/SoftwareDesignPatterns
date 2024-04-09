@@ -167,6 +167,7 @@
     <ClCompile Include="Components\RenderComponents\modelComponent.cpp" />
     <ClCompile Include="Components\RenderComponents\spriteAnimComponent.cpp" />
     <ClCompile Include="Components\RenderComponents\spriteComponent.cpp" />
+    <ClCompile Include="Components\RenderComponents\squareComponent.cpp" />
     <ClCompile Include="Components\RenderComponents\textComponent.cpp" />
     <ClCompile Include="Components\tilemapComponent.cpp" />
     <ClCompile Include="Core\file.cpp" />
@@ -209,6 +210,7 @@
     <ClInclude Include="Components\RenderComponents\renderComponent.h" />
     <ClInclude Include="Components\RenderComponents\spriteAnimComponent.h" />
     <ClInclude Include="Components\RenderComponents\spriteComponent.h" />
+    <ClInclude Include="Components\RenderComponents\squareComponent.h" />
     <ClInclude Include="Components\RenderComponents\textComponent.h" />
     <ClInclude Include="Components\tilemapComponent.h" />
     <ClInclude Include="Core\file.h" />

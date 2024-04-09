@@ -69,6 +69,14 @@ namespace vl
 		SDL_RenderDrawPointF(m_renderer, v.x, v.y);
 	}
 
+	void Renderer::DrawRect(const Vector2& v1, const Vector2& v2, const Color& color)
+	{
+		SDL_SetRenderDrawColor(m_renderer, color.r, color.g, color.b, color.a);
+		auto rect = new SDL_Rect();
+		rect->x = v1.x; rect->y = v1.y; rect->w = v2.x - v1.x; rect->h = v2.y - v1.y;
+		SDL_RenderDrawRect(m_renderer, rect);
+	}
+
 	void Renderer::Draw(std::shared_ptr<Texture> texture, const Vector2& position, float angle, const Vector2& scale, const Vector2& registration)
 	{
 		Vector2 size = texture->GetSize();
