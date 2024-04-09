@@ -6,6 +6,7 @@ class Turtle : public ITurtle
 private:
 	vl::Actor actor;
 public:
+	Turtle();
 	void MoveUp();
 	void MoveDown();
 	void MoveLeft();
