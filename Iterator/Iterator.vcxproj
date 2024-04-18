@@ -129,7 +129,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Concreteaggregate\BackpackInventory.cpp" />
+    <ClCompile Include="Concreteaggregate\HandsInventory.cpp" />
     <ClCompile Include="ConcreteIterator\BackpackIterator.cpp" />
+    <ClCompile Include="ConcreteIterator\HandsIterator.cpp" />
     <ClCompile Include="Items\Book.cpp" />
     <ClCompile Include="Items\Map.cpp" />
     <ClCompile Include="Items\Torch.cpp" />
@@ -137,7 +139,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Concreteaggregate\BackpackInventory.h" />
+    <ClInclude Include="ConcreteAggregate\HandsInventory.h" />
     <ClInclude Include="ConcreteIterator\BackpackIterator.h" />
+    <ClInclude Include="ConcreteIterator\HandsIterator.h" />
     <ClInclude Include="Interfaces\IInventoryAgg.h" />
     <ClInclude Include="Interfaces\IInventoryIterator.h" />
     <ClInclude Include="Interfaces\IItem.h" />

@@ -45,6 +45,12 @@
     <ClCompile Include="Items\Book.cpp">
       <Filter>Items</Filter>
     </ClCompile>
+    <ClCompile Include="Concreteaggregate\HandsInventory.cpp">
+      <Filter>ConcreteAggregate</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteIterator\HandsIterator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Interfaces\IItem.h">
@@ -70,6 +76,12 @@
     </ClInclude>
     <ClInclude Include="Items\Book.h">
       <Filter>Items</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteIterator\HandsIterator.h">
+      <Filter>ConcreteIterator</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteAggregate\HandsInventory.h">
+      <Filter>ConcreteAggregate</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
