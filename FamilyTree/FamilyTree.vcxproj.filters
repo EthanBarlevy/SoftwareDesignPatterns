@@ -33,5 +33,40 @@
     <ClCompile Include="FamilyTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ConcreteIterator\FamilyIterator.cpp">
+      <Filter>ConcreteIterator</Filter>
+    </ClCompile>
+    <ClCompile Include="ConcreteAggregate\Families.cpp">
+      <Filter>CongreteAggregate</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite\FamilyGroup.cpp">
+      <Filter>Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="Leaf\FamilyMember.cpp">
+      <Filter>Leaf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interfaces\IFamilyGroup.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFamilyAgg.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IFamilyIterator.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite\FamilyGroup.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteIterator\FamilyIterator.h">
+      <Filter>ConcreteIterator</Filter>
+    </ClInclude>
+    <ClInclude Include="ConcreteAggregate\Families.h">
+      <Filter>CongreteAggregate</Filter>
+    </ClInclude>
+    <ClInclude Include="Leaf\FamilyMember.h">
+      <Filter>Leaf</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

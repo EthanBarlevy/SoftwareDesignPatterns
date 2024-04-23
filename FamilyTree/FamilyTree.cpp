@@ -1,4 +1,6 @@
 #include "engine.h"
+#include "Composite/FamilyGroup.h"
+#include "Leaf/FamilyMember.h"
 #include <iostream>
 #include <algorithm>
 
@@ -23,6 +25,17 @@ int main()
 	// create window
 	vl::g_renderer.CreateWindow("Command Pattern", 500, 500);
 	vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
+
+	IFamilyGroup* ethan = new FamilyGroup("Ethan Barlevy", "2003");
+		IFamilyGroup* al = new FamilyGroup("Alon Barlevy", "1969");
+			al->Add(new FamilyMemeber("Rami Barlevy", "1943"));
+			al->Add(new FamilyMemeber("Relena Barlevy", "1947"));
+		IFamilyGroup* nina = new FamilyGroup("Nina Barlevy", "1972");
+			nina->Add(new FamilyMemeber("Ella Northup", "1950"));
+			nina->Add(new FamilyMemeber("John Northup", "1945"));
+		ethan->Add(al);
+		ethan->Add(nina);
+	ethan->GetName("");
 
 	{
 		bool quit = false;

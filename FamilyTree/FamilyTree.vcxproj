@@ -129,12 +129,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Composite\FamilyGroup.cpp" />
+    <ClCompile Include="ConcreteAggregate\Families.cpp" />
+    <ClCompile Include="ConcreteIterator\FamilyIterator.cpp" />
     <ClCompile Include="FamilyTree.cpp" />
+    <ClCompile Include="Leaf\FamilyMember.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
       <Project>{a78f4ba7-e1fb-4ff3-a7fc-9b9e30b48980}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Composite\FamilyGroup.h" />
+    <ClInclude Include="ConcreteAggregate\Families.h" />
+    <ClInclude Include="ConcreteIterator\FamilyIterator.h" />
+    <ClInclude Include="Interfaces\IFamilyAgg.h" />
+    <ClInclude Include="Interfaces\IFamilyGroup.h" />
+    <ClInclude Include="Interfaces\IFamilyIterator.h" />
+    <ClInclude Include="Leaf\FamilyMember.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
