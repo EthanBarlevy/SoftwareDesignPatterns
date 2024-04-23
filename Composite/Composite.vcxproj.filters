@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{b348d7f8-208d-4203-90dd-68d2283c1585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Composite">
+      <UniqueIdentifier>{71c2be9c-911c-4e11-8526-d0895fa4b70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Leaf">
+      <UniqueIdentifier>{46fe80c4-2b18-4d5b-98c3-61127b90b9a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Composite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Leaf\MenuItem.cpp">
+      <Filter>Leaf</Filter>
+    </ClCompile>
+    <ClCompile Include="Composite\MenuCategory.cpp">
+      <Filter>Composite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Interfaces\IMenu.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Leaf\MenuItem.h">
+      <Filter>Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite\MenuCategory.h">
+      <Filter>Composite</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
