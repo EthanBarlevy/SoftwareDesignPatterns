@@ -45,6 +45,9 @@
     <ClCompile Include="Leaf\FamilyMember.cpp">
       <Filter>Leaf</Filter>
     </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Interfaces\IFamilyGroup.h">
@@ -67,6 +70,9 @@
     </ClInclude>
     <ClInclude Include="Leaf\FamilyMember.h">
       <Filter>Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

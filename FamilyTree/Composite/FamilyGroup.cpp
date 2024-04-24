@@ -6,15 +6,16 @@ FamilyGroup::FamilyGroup(std::string name, std::string year)
 	this->year = year;
 }
 
-void FamilyGroup::GetName(std::string start)
+std::string FamilyGroup::GetName(std::string start)
 {
-	std::cout << start << name  << ", " << year << std::endl;
+	std::string names = start + name + ", " + year + "\n";
 	IFamilyIterator* iterator = family.GetIterator();
 	while (iterator->HasNext())
 	{
-		iterator->Current()->GetName(start + "   ");
+		names += iterator->Current()->GetName(start + "   ");
 		iterator->Next();
 	}
+	return names;
 }
 
 

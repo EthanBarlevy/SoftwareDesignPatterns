@@ -7,7 +7,7 @@ class FamilyGroup : public IFamilyGroup
 {
 public:
 	FamilyGroup(std::string name, std::string year);
-	void GetName(std::string start) override;
+	std::string GetName(std::string start) override;
 	void Add(IFamilyGroup* MenuItem) override;
 	void Remove(IFamilyGroup* MenuItem) override;
 private:

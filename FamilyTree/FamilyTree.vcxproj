@@ -134,6 +134,7 @@
     <ClCompile Include="ConcreteIterator\FamilyIterator.cpp" />
     <ClCompile Include="FamilyTree.cpp" />
     <ClCompile Include="Leaf\FamilyMember.cpp" />
+    <ClCompile Include="Program.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Engine\Engine.vcxproj">
@@ -148,6 +149,7 @@
     <ClInclude Include="Interfaces\IFamilyGroup.h" />
     <ClInclude Include="Interfaces\IFamilyIterator.h" />
     <ClInclude Include="Leaf\FamilyMember.h" />
+    <ClInclude Include="Program.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

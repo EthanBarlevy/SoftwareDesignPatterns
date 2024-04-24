@@ -4,7 +4,7 @@
 class IFamilyGroup
 {
 public:
-	virtual void GetName(std::string start) {};
+	virtual std::string GetName(std::string start) { return ""; };
 	virtual void Add(IFamilyGroup* MenuItem) {};
 	virtual void Remove(IFamilyGroup* MenuItem) {};
 };

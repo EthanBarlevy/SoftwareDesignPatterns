@@ -6,9 +6,9 @@ FamilyMemeber::FamilyMemeber(std::string name, std::string year)
 	this->year = year;
 }
 
-void FamilyMemeber::GetName(std::string start)
+std::string FamilyMemeber::GetName(std::string start)
 {
-	std::cout << start << " - " << name << ", " << year << std::endl;
+	return start + " - " + name + ", " + year + "\n";
 }
 
 void FamilyMemeber::Add(IFamilyGroup* MenuItem)
