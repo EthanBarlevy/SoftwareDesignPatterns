@@ -42,12 +42,12 @@ int main()
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
 
-			program->Update();
+			//program->Update();
 
 			//render
 			vl::g_renderer.BeginFrame();
 
-			program->Draw(vl::g_renderer);
+			//program->Draw(vl::g_renderer);
 
 			vl::g_renderer.EndFrame();
 		}

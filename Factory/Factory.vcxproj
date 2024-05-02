@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{591bf627-2857-4d10-bbea-1941c0c7cd79}</ProjectGuid>
+    <RootNamespace>Factory</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Factories\ChicagoPizzaIngredientFactory.cpp" />
+    <ClCompile Include="Factories\NewYorkPizzaIngredientFactory.cpp" />
+    <ClCompile Include="Factory.cpp" />
+    <ClCompile Include="Ingredients\BlackOlive.cpp" />
+    <ClCompile Include="Ingredients\Garlic.cpp" />
+    <ClCompile Include="Ingredients\Ham.cpp" />
+    <ClCompile Include="Ingredients\Jalepeno.cpp" />
+    <ClCompile Include="Ingredients\MarinaraSauce.cpp" />
+    <ClCompile Include="Ingredients\MotzerellaCheese.cpp" />
+    <ClCompile Include="Ingredients\Mushroom.cpp" />
+    <ClCompile Include="Ingredients\Onion.cpp" />
+    <ClCompile Include="Ingredients\Pepperoni.cpp" />
+    <ClCompile Include="Ingredients\PlumTomatoSauce.cpp" />
+    <ClCompile Include="Ingredients\RedPepper.cpp" />
+    <ClCompile Include="Ingredients\RegianoCheese.cpp" />
+    <ClCompile Include="Ingredients\Sausage.cpp" />
+    <ClCompile Include="Ingredients\Spinach.cpp" />
+    <ClCompile Include="Ingredients\ThickCrustDough.cpp" />
+    <ClCompile Include="Ingredients\ThinCrustDough.cpp" />
+    <ClCompile Include="Pizzas\CheesePizza.cpp" />
+    <ClCompile Include="Pizzas\MeatPizza.cpp" />
+    <ClCompile Include="Pizzas\Pizza.cpp" />
+    <ClCompile Include="Pizzas\VeggiePizza.cpp" />
+    <ClCompile Include="Stores\ChicagoPizzaStore.cpp" />
+    <ClCompile Include="Stores\NewYorkPizzaStore.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Factories\ChicagoPizzaIngredientFactory.h" />
+    <ClInclude Include="Factories\NewYorkPizzaIngredientFactory.h" />
+    <ClInclude Include="Ingredients\BlackOlive.h" />
+    <ClInclude Include="Ingredients\Garlic.h" />
+    <ClInclude Include="Ingredients\Ham.h" />
+    <ClInclude Include="Ingredients\Ingredients.h" />
+    <ClInclude Include="Ingredients\Jalepeno.h" />
+    <ClInclude Include="Ingredients\MarinaraSauce.h" />
+    <ClInclude Include="Ingredients\MotzerellaCheese.h" />
+    <ClInclude Include="Ingredients\Mushroom.h" />
+    <ClInclude Include="Ingredients\Onion.h" />
+    <ClInclude Include="Ingredients\Pepperoni.h" />
+    <ClInclude Include="Ingredients\PlumTomatoSauce.h" />
+    <ClInclude Include="Ingredients\RedPepper.h" />
+    <ClInclude Include="Ingredients\RegianoCheese.h" />
+    <ClInclude Include="Ingredients\Sausage.h" />
+    <ClInclude Include="Ingredients\Spinach.h" />
+    <ClInclude Include="Ingredients\ThickCrustDough.h" />
+    <ClInclude Include="Ingredients\ThinCrustDough.h" />
+    <ClInclude Include="Interfaces\ICheese.h" />
+    <ClInclude Include="Interfaces\IDough.h" />
+    <ClInclude Include="Interfaces\IMeat.h" />
+    <ClInclude Include="Interfaces\IPizzaIngredientFactory.h" />
+    <ClInclude Include="Interfaces\ISauce.h" />
+    <ClInclude Include="Interfaces\IVeggie.h" />
+    <ClInclude Include="Pizzas\CheesePizza.h" />
+    <ClInclude Include="Pizzas\MeatPizza.h" />
+    <ClInclude Include="Pizzas\Pizza.h" />
+    <ClInclude Include="Pizzas\VeggiePizza.h" />
+    <ClInclude Include="Stores\ChicagoPizzaStore.h" />
+    <ClInclude Include="Stores\NewYorkPizzaStore.h" />
+    <ClInclude Include="Stores\PizzaStore.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

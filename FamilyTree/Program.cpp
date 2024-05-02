@@ -5,14 +5,15 @@
 
 std::vector<std::string> split(std::string text, std::string deliminator)
 {
-	int deliminatorPosition = 0;
-	std::vector<std::string> bits; // it just skips the while ??
+	int deliminatorPosition = text.find(deliminator);
+	std::string tex = text;
+	std::vector<std::string> bits;
 	while (deliminatorPosition != std::string::npos)
 	{
-		deliminatorPosition = text.find(deliminator);
-		std::string sub = text.substr(0, deliminatorPosition);
+		std::string sub = tex.substr(0, deliminatorPosition);
 		bits.push_back(sub);
-		text = text.substr(deliminatorPosition);
+		tex = tex.substr(deliminatorPosition);
+		deliminatorPosition = tex.find(deliminator);
 	}
 	return bits;
 }
