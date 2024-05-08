@@ -8,12 +8,12 @@
 class Pizza
 {
 public:
-	ISauce* sauce;
-	std::vector<IVeggie*>* veggies;
-	ICheese* cheese;
-	std::vector<IMeat*>* meats;
-	IDough* dough;
-	std::string name;
+	ISauce* sauce = new ISauce;
+	std::vector<IVeggie*>* veggies = new std::vector<IVeggie*>;
+	ICheese* cheese = new ICheese;
+	std::vector<IMeat*>* meats = new std::vector<IMeat*>;
+	IDough* dough = new IDough;
+	std::string name = "";
 public:
 	virtual void Prepare() {};
 	virtual std::string GetName() { return name; }

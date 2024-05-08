@@ -22,8 +22,8 @@ int main()
 	vl::Engine::Instance().Register();
 
 	// create window
-	vl::g_renderer.CreateWindow("Iterator & Composite Pattern", 500, 500);
-	vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
+	//vl::g_renderer.CreateWindow("Iterator & Composite Pattern", 500, 500);
+	//vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
 
 	std::unique_ptr<Program> program = std::make_unique<Program>();
 	program->Initialize();

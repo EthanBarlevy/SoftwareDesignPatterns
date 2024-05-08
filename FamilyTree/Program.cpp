@@ -35,11 +35,11 @@ void Program::Initialize()
 
 	IFamilyGroup* ethan = new FamilyGroup("Ethan Barlevy", "2003");
 		IFamilyGroup* al = new FamilyGroup("Alon Barlevy", "1969");
-			al->Add(new FamilyMemeber("Rami Barlevy", "1943"));
-			al->Add(new FamilyMemeber("Relena Barlevy", "1947"));
+			al->Add(new FamilyMemeber("Rami Barlevy", "1942"));
+			al->Add(new FamilyMemeber("Rilena Barlevy", "1945"));
 		IFamilyGroup* nina = new FamilyGroup("Nina Barlevy", "1972");
-			nina->Add(new FamilyMemeber("Ella Northup", "1950"));
-			nina->Add(new FamilyMemeber("John Northup", "1945"));
+			nina->Add(new FamilyMemeber("Ella Northup", "1941"));
+			nina->Add(new FamilyMemeber("Lynn Northup", "1944"));
 		ethan->Add(al);
 		ethan->Add(nina);
 	std::string family = ethan->GetName("");

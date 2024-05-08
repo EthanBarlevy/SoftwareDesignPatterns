@@ -1,6 +1,6 @@
 #pragma once
 #include "../Interfaces/IPizzaIngredientFactory.h"
-class NewYorkPizzaIngredientFactory : IPizzaIngredientFactory
+class NewYorkPizzaIngredientFactory : public IPizzaIngredientFactory
 {
 public:
 	IDough* CreateDough() override;

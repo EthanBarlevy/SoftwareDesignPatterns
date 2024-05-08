@@ -1,12 +1,12 @@
 #include "NewYorkPizzaStore.h"
-#include "../Factories/ChicagoPizzaIngredientFactory.h"
+#include "../Factories/NewYorkPizzaIngredientFactory.h"
 #include "../Pizzas/CheesePizza.h"
 #include "../Pizzas/VeggiePizza.h"
 #include "../Pizzas/MeatPizza.h"
 Pizza* NewYorkPizzaStore::CreatePizza(std::string type)
 {
     Pizza* pizza = nullptr;
-    IPizzaIngredientFactory* ingredientFactory = new ChicagoPizzaIngredientFactory();
+    IPizzaIngredientFactory* ingredientFactory = new NewYorkPizzaIngredientFactory();
     if (type == "veggie")
     {
         pizza = new VeggiePizza(ingredientFactory);

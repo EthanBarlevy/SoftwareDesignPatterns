@@ -21,6 +21,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FamilyTree", "FamilyTree\Fa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Factory", "Factory\Factory.vcxproj", "{591BF627-2857-4D10-BBEA-1941C0C7CD79}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CodeBlockGenerator", "CodeBlockGenerator\CodeBlockGenerator.vcxproj", "{04B1A410-88D3-41EA-BE13-328596D3BBFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -101,6 +103,14 @@ Global
 		{591BF627-2857-4D10-BBEA-1941C0C7CD79}.Release|x64.Build.0 = Release|x64
 		{591BF627-2857-4D10-BBEA-1941C0C7CD79}.Release|x86.ActiveCfg = Release|Win32
 		{591BF627-2857-4D10-BBEA-1941C0C7CD79}.Release|x86.Build.0 = Release|Win32
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Debug|x64.ActiveCfg = Debug|x64
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Debug|x64.Build.0 = Debug|x64
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Debug|x86.ActiveCfg = Debug|Win32
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Debug|x86.Build.0 = Debug|Win32
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Release|x64.ActiveCfg = Release|x64
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Release|x64.Build.0 = Release|x64
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Release|x86.ActiveCfg = Release|Win32
+		{04B1A410-88D3-41EA-BE13-328596D3BBFA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

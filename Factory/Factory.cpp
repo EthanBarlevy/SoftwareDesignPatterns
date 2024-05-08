@@ -1,6 +1,6 @@
 #include <iostream>
-#include "Stores/NewYorkPizzaStore.h"
-#include "Stores/ChicagoPizzaStore.h"
+#include "./Stores/NewYorkPizzaStore.h"
+#include "./Stores/ChicagoPizzaStore.h"
 
 static void PrintPizza(Pizza* pizza)
 {
