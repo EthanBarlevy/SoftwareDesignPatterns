@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Attributes\Hight.cpp" />
+    <ClCompile Include="Attributes\Margin.cpp" />
     <ClCompile Include="Attributes\Width.cpp" />
     <ClCompile Include="CodeBlockGenerator.cpp" />
     <ClCompile Include="Factories\HTMLFactory.cpp" />

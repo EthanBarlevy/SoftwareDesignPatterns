@@ -34,7 +34,10 @@
       <Filter>Factories</Filter>
     </ClCompile>
     <ClCompile Include="Attributes\Hight.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="Attributes\Margin.cpp">
+      <Filter>Attributes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
