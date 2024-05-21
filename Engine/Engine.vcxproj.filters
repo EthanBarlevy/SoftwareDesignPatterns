@@ -177,6 +177,9 @@
     <ClCompile Include="Components\RenderComponents\LineComponent.cpp">
       <Filter>Source Files\Components\RenderComponents</Filter>
     </ClCompile>
+    <ClCompile Include="Components\RenderComponents\circleComponent.cpp">
+      <Filter>Source Files\Components\RenderComponents</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Math\mathUtils.h">
@@ -339,6 +342,9 @@
       <Filter>Source Files\Components\RenderComponents</Filter>
     </ClInclude>
     <ClInclude Include="Components\RenderComponents\LineComponent.h">
+      <Filter>Source Files\Components\RenderComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Components\RenderComponents\circleComponent.h">
       <Filter>Source Files\Components\RenderComponents</Filter>
     </ClInclude>
   </ItemGroup>

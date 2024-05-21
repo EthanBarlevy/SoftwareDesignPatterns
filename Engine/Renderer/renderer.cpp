@@ -77,6 +77,24 @@ namespace vl
 		SDL_RenderFillRect(m_renderer, rect);
 	}
 
+	void Renderer::DrawCircle(const Vector2& v1, const float rad, const Color& color)
+	{
+		SDL_SetRenderDrawColor(m_renderer, color.r, color.g, color.b, color.a);
+		int centerX = static_cast<int>(v1.x);
+		int centerY = static_cast<int>(v1.y);
+		int radius = static_cast<int>(rad);
+
+		for (int w = 0; w < radius * 2; w++) {
+			for (int h = 0; h < radius * 2; h++) {
+				int dx = radius - w; // horizontal offset
+				int dy = radius - h; // vertical offset
+				if ((dx * dx + dy * dy) <= (radius * radius)) {
+					SDL_RenderDrawPoint(m_renderer, centerX + dx, centerY + dy);
+				}
+			}
+		}
+	}
+
 	void Renderer::Draw(std::shared_ptr<Texture> texture, const Vector2& position, float angle, const Vector2& scale, const Vector2& registration)
 	{
 		Vector2 size = texture->GetSize();

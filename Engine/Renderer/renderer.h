@@ -38,6 +38,7 @@ namespace vl
 		void DrawPoint(const Vector2& v, const Color& color);
 
 		void DrawRect(const Vector2& v1, const Vector2& v2, const Color& color);
+		void DrawCircle(const Vector2& v1, const float rad, const Color& color);
 
 		// image
 		void Draw(std::shared_ptr<Texture> texture, const Vector2& position, float angle = 0, const Vector2& scale = Vector2{1, 1}, const Vector2& registration = Vector2{0.5f, 0.5f});

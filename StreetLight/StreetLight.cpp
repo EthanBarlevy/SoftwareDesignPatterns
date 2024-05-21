@@ -1,9 +1,6 @@
 #include "engine.h"
-#include "program.h"
+#include "Program.h"
 #include <iostream>
-#include <algorithm>
-
-using namespace std;
 
 int main()
 {
@@ -22,7 +19,7 @@ int main()
 	vl::Engine::Instance().Register();
 
 	// create window
-	vl::g_renderer.CreateWindow("Iterator & Composite Pattern", 500, 500);
+	vl::g_renderer.CreateWindow("Street Lights", 500, 500);
 	vl::g_renderer.setClearColor(vl::Color{ 255, 255, 255, 255 });
 
 	std::unique_ptr<Program> program = std::make_unique<Program>();
@@ -42,18 +39,19 @@ int main()
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
 
-			//program->Update();
+			program->Update();
 
 			//render
 			vl::g_renderer.BeginFrame();
 
-			//program->Draw(vl::g_renderer);
+			program->Draw(vl::g_renderer);
 
 			vl::g_renderer.EndFrame();
 		}
 	}
 	program->Shutdown();
 	program.reset();
+
 	vl::Factory::Instance().Shutdown();
 	// technically these should also be singletons but i am to lazy to fix it
 	vl::g_inputSystem.Shutdown();

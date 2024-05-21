@@ -36,6 +36,7 @@
 #include "Components/RenderComponents/modelComponent.h"
 #include "Components/RenderComponents/textComponent.h"
 #include "Components/RenderComponents/squareComponent.h"
+#include "Components/RenderComponents/circleComponent.h"
 #include "Components/RenderComponents/LineComponent.h"
 #include "Components/tilemapComponent.h"
 #include "Components/audioComponent.h"

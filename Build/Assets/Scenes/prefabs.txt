@@ -1,13 +1,13 @@
 {
-	"actors":[
+	"actors": [
 		{
 			"type":"Actor",
-			"name":"Turtle",
-			"tag":"Player",
+			"name":"RedLight",
+			"tag":"Light",
 			"prefab":true,
 			"transform":{
 				"position":[
-					220,
+					250,
 					100
 				],
 				"scale":[
@@ -18,17 +18,72 @@
 			},
 			"components":[
 				{
-					"type":"SquareComponent",
+					"type":"CircleComponent",
 					"color":[
-						0,
-						0,
-						255,
+						100,
+						100,
+						100,
 						255
 					],
-					"size":[
-						60,
-						60
-					]
+					"radius":50
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"name":"YellowLight",
+			"tag":"Light",
+			"prefab":true,
+			"transform":{
+				"position":[
+					250,
+					210
+				],
+				"scale":[
+					1,
+					1
+				],
+				"rotation":0
+			},
+			"components":[
+				{
+					"type":"CircleComponent",
+					"color":[
+						100,
+						100,
+						100,
+						255
+					],
+					"radius":50
+				}
+			]
+		},
+		{
+			"type":"Actor",
+			"name":"GreenLight",
+			"tag":"Light",
+			"prefab":true,
+			"transform":{
+				"position":[
+					250,
+					320
+				],
+				"scale":[
+					1,
+					1
+				],
+				"rotation":0
+			},
+			"components":[
+				{
+					"type":"CircleComponent",
+					"color":[
+						100,
+						100,
+						100,
+						255
+					],
+					"radius":50
 				}
 			]
 		}

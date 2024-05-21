@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{862631fa-5afb-47b9-b8b8-3685ff93e6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="States">
+      <UniqueIdentifier>{0b0eab0f-3b28-4dd4-b28b-e3aac1681e65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Context">
+      <UniqueIdentifier>{f3f6daf5-917a-4030-bf43-4bcd5e5424ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StreetLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="States\GreenState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\RedState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="States\YellowState.cpp">
+      <Filter>States</Filter>
+    </ClCompile>
+    <ClCompile Include="Context\StreetLightMachine.cpp">
+      <Filter>Context</Filter>
+    </ClCompile>
+    <ClCompile Include="Program.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="States\GreenState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\YellowState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="States\RedState.h">
+      <Filter>States</Filter>
+    </ClInclude>
+    <ClInclude Include="Interfaces\IStreetLightState.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Context\StreetLightMachine.h">
+      <Filter>Context</Filter>
+    </ClInclude>
+    <ClInclude Include="Program.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Build\Assets\Scenes\prefabs.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

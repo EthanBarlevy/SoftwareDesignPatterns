@@ -25,6 +25,7 @@ namespace vl
 		REGISTER_CLASS(TilemapComponent);
 		REGISTER_CLASS(CameraComponent);
 		REGISTER_CLASS(SquareComponent);
+		REGISTER_CLASS(CircleComponent);
 		REGISTER_CLASS(LineComponent);
 	}
 }
