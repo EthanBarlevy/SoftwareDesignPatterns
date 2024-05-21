@@ -28,6 +28,7 @@ int main()
 	{
 		bool quit = false;
 		bool action = true;
+		bool hasinputted = false;
 		while (!quit)
 		{
 			// update
@@ -38,6 +39,17 @@ int main()
 			vl::g_eventManager.Update();
 
 			if (vl::g_inputSystem.GetKeyDown(vl::key_escape)) quit = true;
+
+			if (vl::g_inputSystem.GetKeyDown(vl::key_space) && !hasinputted)
+			{
+				program->ManualChangeState();
+				hasinputted = true;
+			}
+
+			if (vl::g_inputSystem.GetKeyState(vl::key_space) == vl::g_inputSystem.Released)
+			{
+				hasinputted = false;
+			}
 
 			program->Update();
 

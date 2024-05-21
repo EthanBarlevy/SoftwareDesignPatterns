@@ -87,3 +87,9 @@ void Program::Draw(vl::Renderer& renderer)
 {
 	m_scene->Draw(vl::g_renderer);
 }
+
+void Program::ManualChangeState()
+{
+	lightManager->NextState();
+	automaticStateChange = 3;
+}
