@@ -45,11 +45,24 @@ int main()
 				program->ManualChangeState();
 				hasinputted = true;
 			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_a)) // go to red
+			{
+				if (program->GetCurrentState() == "Yellow") program->ManualChangeState();
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_s)) // go to yellow
+			{
+				if (program->GetCurrentState() == "Green") program->ManualChangeState();
+			}
+			if (vl::g_inputSystem.GetKeyDown(vl::key_d)) // go to green
+			{
+				if (program->GetCurrentState() == "Red") program->ManualChangeState();
+			}
 
 			if (vl::g_inputSystem.GetKeyState(vl::key_space) == vl::g_inputSystem.Released)
 			{
 				hasinputted = false;
 			}
+
 
 			program->Update();
 

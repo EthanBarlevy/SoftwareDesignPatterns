@@ -93,3 +93,8 @@ void Program::ManualChangeState()
 	lightManager->NextState();
 	automaticStateChange = 3;
 }
+
+std::string Program::GetCurrentState()
+{
+	return lightManager->GetCurrentState();
+}

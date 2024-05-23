@@ -17,5 +17,6 @@ public:
 	virtual void Update() override;
 	virtual void Draw(vl::Renderer& renderer) override;
 	virtual void ManualChangeState();
+	std::string GetCurrentState();
 	vl::Scene* GetScene();
 };
